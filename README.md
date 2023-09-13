@@ -1,4 +1,4 @@
-# SoyDNGPNext Documentation V0.0.1
+# SoyDNGPNext Documentation
 
 SoyDNGPNext is a deep learning driving bioinformatical toolkit, which performs good on soybean datasets, and is permitted to apply on other organisms. This documentation could also be treated as a tutorial.\
 👉**We have made a prepared container at https://hub.docker.com/repository/docker/indigofloyd/soydngp/general. If you'd like to use your own environment, just run ```pip install soydngpnext```.**\
