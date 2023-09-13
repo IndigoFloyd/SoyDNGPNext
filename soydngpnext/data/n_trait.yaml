@@ -1,0 +1,36 @@
+protein:
+  max: 57.9
+  min: 31.7
+oil:
+  max: 25.4
+  min: 7.5
+Palmitic:
+  max: 20.4
+  min: 5.71
+Stearic:
+  max: 10.6
+  min: 1.1
+Oleic:
+  max: 58.73
+  min: 8.8
+Linoleic:
+  max: 65.85
+  min: 23.96
+Linolenic:
+  max: 24.5
+  min: 2.7
+R1:
+  max: 149.0
+  min: 36.0
+R8:
+  max: 152.0
+  min: -74.0
+Hgt:
+  max: 334.0
+  min: 14.0
+SdWgt:
+  max: 49.5
+  min: 1.2
+Yield:
+  max: 6.84
+  min: 0.02

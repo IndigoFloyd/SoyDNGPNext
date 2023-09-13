@@ -1,0 +1,85 @@
+MG:
+  0: VI
+  1: IV
+  2: III
+  3: X
+  4: O
+  5: IX
+  6: II
+  7: I
+  8: V
+  9: VIII
+  10: VII
+SQ:
+  0: III
+  1: IV
+  2: II
+  3: V
+  4: I
+ST:
+  0: N
+  1: S
+  2: D
+Ldg:
+  0: III
+  1: IV
+  2: II
+  3: V
+  4: I
+FC:
+  0: W
+  1: P
+P_CLR:
+  0: G
+  1: T
+Mot:
+  0: III
+  1: IV
+  2: O
+  3: II
+  4: V
+  5: I
+P_FRM:
+  0: Sa
+  1: Va
+  2: A
+  3: E
+P_DENS:
+  0: Ssp
+  1: N
+POD:
+  0: TN
+  1: Tn
+  2: Br
+  3: Bl
+SC_L:
+  0: I
+  1: S
+  2: B
+  3: D
+SC_CLR:
+  0: Rbr
+  1: Bl
+  2: Br
+  3: Lgn
+  4: Gn
+  5: Y
+Stem term:
+  0: III
+  1: IV
+  2: II
+  3: V
+  4: I
+H_CLR:
+  0: Bl
+  1: Br
+  2: Brbl
+  3: Bf
+  4: Y
+PRR1:
+  0: H
+  1: S
+  2: R
+SCN3:
+  0: S
+  1: MS

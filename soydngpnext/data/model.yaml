@@ -1,0 +1,40 @@
+#Block of SoyDNGP has already supported:
+#CNN_Block:(input_channel,out_channel,kernel_size,padding_size,stride,dropout_rate)
+#ReLU_() with no param 
+#Linear_:(input_length,num_class,dropout_rate)  if regression,the num_class = 1
+#SE_attention(input_channel, reduction)
+#CBAM_attention(input_channel, reduction)
+#CA_attention(input_channel,height,width,reduction)
+#Rediual_Block(in_channel,out_channel,kernel_size,padding,stride,drop_out)
+# When the stride = 1 
+# Residual_Block is equal two CNN_Block which include:
+# CNN_Block1:(input_channel,out_channel,kernel_size,padding_size,1,dropout_rate)
+# CNN_Block2:(out_channel,out_channel,3,1,1,dropout_rate)
+# Please name block as {Block name.str} as below
+# Out channels of the last linear layer is a variable 'num_classes'. Don't change it.
+model:
+ CNN_Block.1: (3,32,3,1,1,0.3)
+ ReLU_.1: ()
+ CNN_Block.2: (32,64,4,1,2,0.3)
+ ReLU_.2: ()
+ CNN_Block.3: (64,64,3,1,2,0.3)
+ ReLU_.3: ()
+ CNN_Block.4: (64,64,3,1,1,0.3)
+ ReLU_.4: ()
+ CNN_Block.5: (64,128,3,1,1,0.3)
+ ReLU_.5: ()
+ CNN_Block.6: (128,128,3,1,1,0.3)
+ ReLU_.6: ()
+ CNN_Block.7: (128,256,2,0,2,0.3)
+ ReLU_.7: ()
+ CNN_Block.8: (256,256,3,1,1,0.3)
+ ReLU_.8: ()
+ CNN_Block.9: (256,512,2,0,2,0.3)
+ ReLU_.9: ()
+ CNN_Block.10: (512,512,3,1,1,0.3)
+ ReLU_.10: ()
+ CNN_Block.11: (512,1024,3,1,2,0.3)
+ ReLU_.11: ()
+ CNN_Block.12: (1024,1024,3,1,1,0.3)
+ ReLU_.12: ()
+ Linear_.1: (50176,num_classes,0.3)
