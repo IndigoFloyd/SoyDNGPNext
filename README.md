@@ -6,6 +6,10 @@ SoyDNGPNext is a deep learning driving bioinformatical toolkit, which performs g
 
 ⚠**Due to different CUDA versions could lead to different errors, we recommend strongly to run this toolkit in the docker container we provided.**
 
+👉**We have also provided a notebook under /draw\_pic folder to show evaluations intuitively.**
+
+⭐**Star us if you like our work!**
+
 ## Structure
 
 SoyDNGPNext adopts the flat structure, and the basic structure is as follows.
