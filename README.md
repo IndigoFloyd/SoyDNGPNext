@@ -1,6 +1,7 @@
 # SoyDNGPNext Documentation V0.0.1
 
-SoyDNGPNext is a deep learning driving bioinformatical toolkit, which performs good on soybean datasets, and is permitted to apply on other organisms. This documentation could also be treated as a tutorial.
+SoyDNGPNext is a deep learning driving bioinformatical toolkit, which performs good on soybean datasets, and is permitted to apply on other organisms. This documentation could also be treated as a tutorial.\
+**We have made a prepared container at https://hub.docker.com/repository/docker/indigofloyd/soydngp/general. If you'd like to use your own environment, just run ```pip install soydngpnext```.**
 
 ## Structure
 
@@ -327,9 +328,9 @@ from SoyDNGPNext import Train
 t = Train("data/genotype.vcf", "data/traits.csv")
 ```
 
-#### Train().train_n(percentage=0.05, epoch=5, weight_decay=1e-5, draw=True)
+#### Train().train_n(epoch=5, weight_decay=1e-5, draw=True)
 
-Train quantity traits model. By calling ```SoyDNGPNext.weight_decoder```, we could find out the first ```percentage``` samples which contribute most. Then, training ```epoch``` epochs, and set ```weight_decay``` as the parameter of ```torch.optim.Adam()```. Finally, if ```draw``` is True, the evaluation pictures will be drawn and saved in path such as ```runs/train/train1```.
+Train quantity traits model. Training ```epoch``` epochs, and set ```weight_decay``` as the parameter of ```torch.optim.Adam()```. Finally, if ```draw``` is True, the evaluation pictures will be drawn and saved in path such as ```runs/train/train1```.
 
 By computing the correlation coefficient value, only the best model will be saved in the end. A dictionary will be returned, too.
 
@@ -346,9 +347,9 @@ For example:
 t.train_n(epoch=100)
 ```
 
-#### Train().train_p(percentage=0.05, epoch=5, weight_decay=1e-5, draw=True)
+#### Train().train_p(epoch=5, weight_decay=1e-5, draw=True)
 
-Train quality traits model. By calling ```SoyDNGPNext.weight_decoder```, we could find out the first ```percentage``` samples which contribute most. Then, training ```epoch``` epochs, and set ```weight_decay``` as the parameter of ```torch.optim.Adam()```. Finally, if ```draw``` is True, the evaluation pictures will be drawn and saved in path such as ```runs/train/train1```.
+Train quality traits model. Training ```epoch``` epochs, and set ```weight_decay``` as the parameter of ```torch.optim.Adam()```. Finally, if ```draw``` is True, the evaluation pictures will be drawn and saved in path such as ```runs/train/train1```.
 
 For example:
 
